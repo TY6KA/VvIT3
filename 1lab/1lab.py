@@ -1,8 +1,9 @@
 import math
 b, a, c = map(int, input().split())
 D = b ** 2 - 4 * a * c
-
-if D < 0 or b == 0 or a == 0 or c == 0:
+if a == 0 or b == 0 or c == 0:
+    print('Корней нет')
+elif D < 0 or b == 0 or a == 0 or c == 0:
     print('Корней нет')
 elif D == 0:
     print(f'{(-b) / (2 * a)}')
